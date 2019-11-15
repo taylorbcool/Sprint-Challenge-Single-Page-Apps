@@ -5,7 +5,7 @@ export default function CharacterCard({character}) {
   const { name, species, image } = character;
   return (
       <Card className='container'>
-        <img src={image} alt={`${name}`}/>
+        <img src={image} alt={name}/>
         <CardTitle>{name}</CardTitle>
         <CardText>Species: {species}</CardText>
       </Card>

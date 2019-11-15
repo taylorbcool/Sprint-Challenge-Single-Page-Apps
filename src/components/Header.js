@@ -4,7 +4,7 @@ import {
   Navbar,
   Nav,
   NavItem } from 'reactstrap';
-import SearchForm from './SearchForm'
+// import SearchForm from './SearchForm'
 
 export default function Header() {  
   return (
@@ -16,7 +16,7 @@ export default function Header() {
             <Link to="/character-list">Characters</Link>
           </NavItem>
           <NavItem>
-            <SearchForm />
+            {/* <SearchForm /> */}
           </NavItem>
         </Nav>
       </Navbar>
