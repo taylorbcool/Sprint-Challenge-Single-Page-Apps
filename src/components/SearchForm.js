@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import CharacterList from "./CharacterList";
 import CharacterCard from "./CharacterCard";
 
 export default function SearchForm(props) {
@@ -21,7 +22,7 @@ export default function SearchForm(props) {
   return (
     <div className="App">
       <form>
-        <label htmlFor="name">Search:</label>
+        <label htmlFor="name">Search:</label>{' '}
         <input
           id="name"
           type="text"
@@ -34,7 +35,7 @@ export default function SearchForm(props) {
       <div className="character-list">
         <ul>
           {searchResults.map(character => (
-            <CharacterCard key={character.id} />
+            <CharacterCard character={character} />
           ))}
         </ul>
       </div>

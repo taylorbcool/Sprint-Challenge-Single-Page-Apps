@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import CharacterCard from './CharacterCard';
 import SearchForm from "./SearchForm";
+import { Jumbotron } from 'reactstrap';
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -26,8 +27,10 @@ export default function CharacterList() {
 
   return (
     <section className="character-list container">
+      <Jumbotron>
       <h3 className='display-4'>Characters</h3>
       <SearchForm array={[...characters]}/>
+      </Jumbotron>
       {characters.map(character => (
         <CharacterCard key={character.id} character={character} />
       ))}
