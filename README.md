@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: Client-side routing occurs when the javascript handles the route. When a user clicks a link the page will change but no request to the server is sent. This is beneficial because the page no longer needs to reload, which is faster for the user, as well as the page not flashing blank to re-render which is more visually appealing to the user.
 
 ## Project Set Up
 
